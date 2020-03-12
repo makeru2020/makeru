@@ -1,0 +1,394 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>汇编 mov指令mov R1，1234报错 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="点灯实验汇编版.html" />
+    
+    
+    <link rel="prev" href="超级终端无打印.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    level 9 ARM-ASM-A9
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Keil找不到交叉编译工具链Error：failed to execute ‘arm-none-linux-gnueabias’.html">
+            
+                <a href="Keil找不到交叉编译工具链Error：failed to execute ‘arm-none-linux-gnueabias’.html">
+            
+                    
+                    Keil找不到交叉编译工具链Error：failed to execute ‘arm-none-linux-gnueabias’
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="没有读写权限.html">
+            
+                <a href="没有读写权限.html">
+            
+                    
+                    keil执行没有读写权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="超级终端无打印.html">
+            
+                <a href="超级终端无打印.html">
+            
+                    
+                    超级终端或者putty无打印
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="汇编mov指令.html">
+            
+                <a href="汇编mov指令.html">
+            
+                    
+                    汇编 mov指令mov R1，1234报错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="点灯实验汇编版.html">
+            
+                <a href="点灯实验汇编版.html">
+            
+                    
+                    点灯实验汇编版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="点灯实验C语言版.html">
+            
+                <a href="点灯实验C语言版.html">
+            
+                    
+                    点灯实验C语言版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="串口实验.html">
+            
+                <a href="串口实验.html">
+            
+                    
+                    串口实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../system/">
+            
+                <a href="../system/">
+            
+                    
+                    level 10 系统移植
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../system/TFTP环境搭建.html">
+            
+                <a href="../system/TFTP环境搭建.html">
+            
+                    
+                    TFTP环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../system/NFS环境搭建.html">
+            
+                <a href="../system/NFS环境搭建.html">
+            
+                    
+                    NFS环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >汇编 mov指令mov R1，1234报错</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6C47;&#x7F16;mov&#x6307;&#x4EE4;">&#x6C47;&#x7F16;mov&#x6307;&#x4EE4;</h1>
+<p>mov R1&#xFF0C;123<br>&#x6267;&#x884C;&#x6CA1;&#x6709;&#x95EE;&#x9898;<br>mov R1&#xFF0C;1234<br>&#x6267;&#x884C;&#x6709;&#x95EE;&#x9898;</p>
+<p>&#x95EE;&#x9898;&#x539F;&#x56E0;&#xFF1A; </p>
+<pre><code>&#x6C47;&#x7F16;&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x5360;&#x7528;4&#x4E2A;&#x5B57;&#x8282;&#xFF0C;mov r1&#xFF0C;0x123&#xFF0C;mov r1&#x90FD;&#x4F1A;&#x5360;&#x7528;&#x7A7A;&#x95F4;&#xFF0C;&#x7559;&#x7ED9;&#x540E;&#x9762;&#x6570;&#x5B57;&#x53EA;&#x6709;12&#x4F4D;&#xFF0C;      
+12&#x4F4D;&#x7A7A;&#x95F4;&#x662F;&#x4E0D;&#x8FDE;&#x7EED;&#x7684;&#xFF0C;&#x662F;&#x79BB;&#x6563;&#x7684;&#xFF0C;0-255&#x662F;&#x53EF;&#x4EE5;&#x8FDE;&#x7EED;&#x5199;&#x7684;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x662F;&#x4E00;&#x4E9B;&#x79BB;&#x6563;&#x7684;&#x6570;&#x5B57;  
+</code></pre><p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;<br>    &#x7528;&#x4F2A;&#x6307;&#x4EE4;ldr</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="超级终端无打印.html" class="navigation navigation-prev " aria-label="Previous page: 超级终端或者putty无打印">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="点灯实验汇编版.html" class="navigation navigation-next " aria-label="Next page: 点灯实验汇编版">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"汇编 mov指令mov R1，1234报错","level":"1.2.4","depth":2,"next":{"title":"点灯实验汇编版","level":"1.2.5","depth":2,"path":"ARM-ASM-A9/点灯实验汇编版.md","ref":"./ARM-ASM-A9/点灯实验汇编版.md","articles":[]},"previous":{"title":"超级终端或者putty无打印","level":"1.2.3","depth":2,"path":"ARM-ASM-A9/超级终端无打印.md","ref":"./ARM-ASM-A9/超级终端无打印.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ARM-ASM-A9/汇编mov指令.md","mtime":"2020-03-12T02:56:21.523Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-12T02:38:45.838Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
