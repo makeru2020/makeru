@@ -1,0 +1,948 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>vmware环境搭建 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="vmwre10打不开Ubuntu.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    level 1 C及环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="vmware安装教程.html">
+            
+                <a href="vmware安装教程.html">
+            
+                    
+                    vmware环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="vmwre10打不开Ubuntu.html">
+            
+                <a href="vmwre10打不开Ubuntu.html">
+            
+                    
+                    vmware安装问题-vmware10打不开Ubuntu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="CPU虚拟化问题.html">
+            
+                <a href="CPU虚拟化问题.html">
+            
+                    
+                    vmware安装问题-不可恢复错误：(vcpu-0)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="不可恢复错误svga.html">
+            
+                <a href="不可恢复错误svga.html">
+            
+                    
+                    vmware安装问题-不可恢复错误：(svga)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="安装hcmon driver失败.html">
+            
+                <a href="安装hcmon driver失败.html">
+            
+                    
+                    vmware安装问题-安装hcmon driver失败
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="Ubuntu懒汉版打开步骤.html">
+            
+                <a href="Ubuntu懒汉版打开步骤.html">
+            
+                    
+                    ubuntu懒汉版打开步骤-推荐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="Ubuntu折腾版iso安装步骤.html">
+            
+                <a href="Ubuntu折腾版iso安装步骤.html">
+            
+                    
+                    ubuntu折腾版iso安装步骤-不推荐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="vim配置.html">
+            
+                <a href="vim配置.html">
+            
+                    
+                    Ubuntu配置-vim配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="vmtools配置.html">
+            
+                <a href="vmtools配置.html">
+            
+                    
+                    Ubuntu配置-vmtools配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../ARM-ASM-A9/">
+            
+                <a href="../../ARM-ASM-A9/">
+            
+                    
+                    level 9 ARM-ASM-A9
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../ARM-ASM-A9/Keil找不到交叉编译工具链Error：failed to execute ‘arm-none-linux-gnueabias’.html">
+            
+                <a href="../../ARM-ASM-A9/Keil找不到交叉编译工具链Error：failed to execute ‘arm-none-linux-gnueabias’.html">
+            
+                    
+                    Keil找不到交叉编译工具链Error：failed to execute ‘arm-none-linux-gnueabias’
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../ARM-ASM-A9/没有读写权限.html">
+            
+                <a href="../../ARM-ASM-A9/没有读写权限.html">
+            
+                    
+                    keil执行没有读写权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../ARM-ASM-A9/超级终端无打印.html">
+            
+                <a href="../../ARM-ASM-A9/超级终端无打印.html">
+            
+                    
+                    超级终端或者putty无打印
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../ARM-ASM-A9/汇编mov指令.html">
+            
+                <a href="../../ARM-ASM-A9/汇编mov指令.html">
+            
+                    
+                    汇编 mov指令mov R1，1234报错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../ARM-ASM-A9/点灯实验汇编版.html">
+            
+                <a href="../../ARM-ASM-A9/点灯实验汇编版.html">
+            
+                    
+                    点灯实验汇编版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../ARM-ASM-A9/点灯实验C语言版.html">
+            
+                <a href="../../ARM-ASM-A9/点灯实验C语言版.html">
+            
+                    
+                    点灯实验C语言版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../ARM-ASM-A9/串口实验.html">
+            
+                <a href="../../ARM-ASM-A9/串口实验.html">
+            
+                    
+                    串口实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../system/">
+            
+                <a href="../../system/">
+            
+                    
+                    level 10 系统移植
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../system/TFTP环境搭建.html">
+            
+                <a href="../../system/TFTP环境搭建.html">
+            
+                    
+                    TFTP环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../system/NFS环境搭建.html">
+            
+                <a href="../../system/NFS环境搭建.html">
+            
+                    
+                    NFS环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../system/SD不好用的替代方式.html">
+            
+                <a href="../../system/SD不好用的替代方式.html">
+            
+                    
+                    SD不好用的替代方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../system/make uImage时找不到mkimage.html">
+            
+                <a href="../../system/make uImage时找不到mkimage.html">
+            
+                    
+                    make uImage时找不到mkimage commond not found -U-Boot image will not be built
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../system/make menuconfig配置内核相关问题.html">
+            
+                <a href="../../system/make menuconfig配置内核相关问题.html">
+            
+                    
+                    make menuconfig配置内核相关问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="../../system/kernel/找不到ncurses库.html">
+            
+                <a href="../../system/kernel/找不到ncurses库.html">
+            
+                    
+                    找不到ncurses库Unable to find the ncurses libraries or the required header files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="../../system/kernel/没有bio.h文件或目录.html">
+            
+                <a href="../../system/kernel/没有bio.h文件或目录.html">
+            
+                    
+                    没有bio.h文件或目录fatal error: openssl/bio.h: No such file or directory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.3" data-path="../../system/kernel/flex找不到.html">
+            
+                <a href="../../system/kernel/flex找不到.html">
+            
+                    
+                    flex找不到：/bin/sh: 1: flex not found
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../system/u-boot编译相关问题.html">
+            
+                <a href="../../system/u-boot编译相关问题.html">
+            
+                    
+                    u-boot编译相关问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="../../system/u-boot/make  [splu-boot-spl.bin] Error 2.html">
+            
+                <a href="../../system/u-boot/make  [splu-boot-spl.bin] Error 2.html">
+            
+                    
+                    make  [splu-boot-spl.bin] Error 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="../../system/u-boot/网卡驱动问题.html">
+            
+                <a href="../../system/u-boot/网卡驱动问题.html">
+            
+                    
+                    网卡驱动问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../system/文件系统挂不上.html">
+            
+                <a href="../../system/文件系统挂不上.html">
+            
+                    
+                    文件系统挂不上
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../../system/加载内核的时候总显示TTTTTTTT.html">
+            
+                <a href="../../system/加载内核的时候总显示TTTTTTTT.html">
+            
+                    
+                    加载内核的时候总显示TTTTTTTT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../../system/tftp 41000000作用.html">
+            
+                <a href="../../system/tftp 41000000作用.html">
+            
+                    
+                    tftp 41000000作用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../drive/">
+            
+                <a href="../../drive/">
+            
+                    
+                    level 11-12 驱动
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../drive/Sourceinsight4的安装使用教程.html">
+            
+                <a href="../../drive/Sourceinsight4的安装使用教程.html">
+            
+                    
+                    Sourceinsight4的安装使用教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../drive/Samba服务器搭建.html">
+            
+                <a href="../../drive/Samba服务器搭建.html">
+            
+                    
+                    Samba服务器搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../drive/Samba更换Sourceinsight+共享文件夹教程.html">
+            
+                <a href="../../drive/Samba更换Sourceinsight+共享文件夹教程.html">
+            
+                    
+                    Samba更换为si+共享文件夹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../drive/Hello.ko模块加载不成功.html">
+            
+                <a href="../../drive/Hello.ko模块加载不成功.html">
+            
+                    
+                    Hello.ko模块加载不成功
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../drive/rmmod卸载驱动失败.html">
+            
+                <a href="../../drive/rmmod卸载驱动失败.html">
+            
+                    
+                    rmmod卸载驱动失败
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../drive/insmod报invalid module format.html">
+            
+                <a href="../../drive/insmod报invalid module format.html">
+            
+                    
+                    insmod报invalid module format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../../drive/按键空指针异常.html">
+            
+                <a href="../../drive/按键空指针异常.html">
+            
+                    
+                    按键空指针异常问题：Unable to handle kernel NULL pointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../../drive/新版内核按键驱动问题.html">
+            
+                <a href="../../drive/新版内核按键驱动问题.html">
+            
+                    
+                    新版内核按键驱动问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../../drive/input子系统设备节点找不到.html">
+            
+                <a href="../../drive/input子系统设备节点找不到.html">
+            
+                    
+                    input子系统设备节点找不到
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../../drive/input子系统上报按键信息读不到问题.html">
+            
+                <a href="../../drive/input子系统上报按键信息读不到问题.html">
+            
+                    
+                    input子系统上报按键信息读不到问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../../drive/plat卸载驱动问题.html">
+            
+                <a href="../../drive/plat卸载驱动问题.html">
+            
+                    
+                    Linux驱动卸载时出现“Device 'xxx' does not have a release()
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../project/">
+            
+                <a href="../../project/">
+            
+                    
+                    level 13 安防项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../project/GPRS设备问题.html">
+            
+                <a href="../../project/GPRS设备问题.html">
+            
+                    
+                    GPRS设备问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../project/404错误.html">
+            
+                <a href="../../project/404错误.html">
+            
+                    
+                    404错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../project/502 Bad Gateway.html">
+            
+                <a href="../../project/502 Bad Gateway.html">
+            
+                    
+                    502 Bad Gateway错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >vmware环境搭建</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>VMware&#x865A;&#x62DF;&#x673A;&#x5B89;&#x88C5;&#x6559;&#x7A0B;&#xFF1A;
+&#x5982;&#x679C;&#x7535;&#x8111;&#x662F;win7 32&#x4F4D;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x53CA;&#x4EE5;&#x4E0B;&#xFF0C;&#x8BF7;&#x5B89;&#x88C5;vmware10
+&#x4E0B;&#x8F7D;&#x94FE;&#x63A5;&#xFF1A;&#x94FE;&#x63A5;&#xFF1A;<a href="https://pan.baidu.com/s/1NBetln7kXsutPQC1hR0ExA" target="_blank">https://pan.baidu.com/s/1NBetln7kXsutPQC1hR0ExA</a> 
+&#x63D0;&#x53D6;&#x7801;&#xFF1A;icfu </p>
+<p>&#x5982;&#x679C;&#x7535;&#x8111;&#x662F;win8 &#x6700;&#x597D;&#x6362;&#x6210;win10&#x7CFB;&#x7EDF;
+win8&#x53CA;win10&#x7CFB;&#x7EDF;&#xFF0C;&#x6700;&#x597D;&#x5148;&#x5B89;&#x88C5;&#x8BFE;&#x7A0B;&#x8D44;&#x6599;&#x4E2D;&#x7684;vmware12&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x518D;&#x6362;vmware15</p>
+<p>1&#x3001;&#x9009;&#x4E2D;&#x3010;VMware-workstation-full-15.5.0-14665864&#x3011;&#x9F20;&#x6807;&#x53CC;&#x51FB;&#x5B89;&#x88C5;&#x865A;&#x62DF;&#x673A;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x53CD;&#x5E94;&#xFF0C;&#x53F3;&#x51FB;&#x9009;&#x62E9;&#x3010;&#x4EE5;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x8FD0;&#x884C;&#x3011;&#x5B89;&#x88C5;&#x865A;&#x62DF;&#x673A;&#xFF1A;</p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116092401157.png" alt="image-20200116092401157"><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116092443269.png" alt="image-20200116092443269"></p>
+<p>2&#x3001;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116092542285.png" alt="image-20200116092542285" style="zoom:50%;"></p>
+<p>3&#x3001;&#x70B9;&#x51FB;&#x3010;&#x4E0B;&#x4E00;&#x6B65;&#x3011;</p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116092759209.png" alt="image-20200116092759209" style="zoom: 80%;"></p>
+<p>4&#x3001;&#x52FE;&#x9009;&#x3010;&#x6211;&#x63A5;&#x53D7;&#x8BB8;&#x53EF;&#x534F;&#x8BAE;&#x4E2D;&#x7684;&#x6761;&#x6B3E;&#x3011;&#xFF0C;&#x70B9;&#x51FB;&#x3010;&#x4E0B;&#x4E00;&#x6B65;&#x3011;&#x3002;</p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116092857577.png" alt="image-20200116092857577" style="zoom:80%;"></p>
+<p>5&#x3001;&#x5EFA;&#x8BAE;&#x70B9;&#x51FB;&#x3010;&#x66F4;&#x6539;&#x3011;&#xFF0C;&#x6765;&#x66F4;&#x6539;&#x8F6F;&#x4EF6;&#x7684;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x5EFA;&#x8BAE;&#x5B89;&#x88C5;&#x5728;&#x9664;C&#x76D8;&#x4E4B;&#x5916;&#x7684;&#x78C1;&#x76D8;&#xFF0C;&#x53EF;&#x5728;D&#x76D8;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x78C1;&#x76D8;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x6765;&#x5B89;&#x88C5;&#x900A;&#x865A;&#x62DF;&#x673A;&#xFF0C;&#x70B9;&#x51FB;&#x3010;&#x4E0B;&#x4E00;&#x6B65;&#x3011;&#x3002;&#xFF08;&#x4E2A;&#x4EBA;&#x8BA4;&#x4E3A;&#x6709;&#x7684;&#x8F6F;&#x4EF6;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4E0D;&#x80FD;&#x6709;&#x4EFB;&#x4F55;&#x6C49;&#x5B57;&#x4EE5;&#x53CA;&#x6C49;&#x5B57;&#x7B26;&#x53F7;&#xFF0C;&#x6240;&#x4EE5;&#x5EFA;&#x8BAE;&#x5404;&#x4F4D;&#x5B66;&#x5458;&#x60A8;&#x4EEC;&#x7535;&#x8111;&#x78C1;&#x76D8;&#x7684;&#x540D;&#x5B57;&#x4EE5;&#x53CA;&#x6587;&#x4EF6;&#x5939;&#x540D;&#x5B57;&#x5C3D;&#x91CF;&#x5168;&#x90E8;&#x82F1;&#x6587;&#x4E0D;&#x8981;&#x51FA;&#x73B0;&#x4E2D;&#x6587;&#x5B57;&#x7B26;&#xFF09;</p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116093204845.png" alt="image-20200116093204845" style="zoom:80%;"></p>
+<p>6&#x3001;&#x53D6;&#x6D88;&#x52FE;&#x9009;&#xFF0C;&#x70B9;&#x51FB;&#x3010;&#x4E0B;&#x4E00;&#x6B65;&#x3011;&#x3002;&#xFF08;&#x7248;&#x672C;&#x66F4;&#x65B0;&#x662F;&#x5F88;&#x9EBB;&#x70E6;&#x7684;&#x4E8B;&#x513F;&#xFF0C;&#x4E00;&#x4E0D;&#x5C0F;&#x5FC3;&#x5C31;&#x7F3A;&#x4E1C;&#x5C11;&#x897F;&#x73AF;&#x5883;&#x51FA;&#x73B0;&#x6BDB;&#x75C5;&#xFF0C;&#x5EFA;&#x8BAE;&#x5404;&#x4F4D;&#x53D6;&#x6D88;&#x52FE;&#x9009;&#xFF09;</p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116093705830.png" alt="image-20200116093705830" style="zoom:80%;"></p>
+<p>7&#x3001;&#x70B9;&#x51FB;&#x3010;&#x4E0B;&#x4E00;&#x6B65;&#x3011;</p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116093743848.png" alt="image-20200116093743848" style="zoom:80%;"></p>
+<p>8&#x3001;&#x70B9;&#x51FB;&#x3010;&#x5B89;&#x88C5;&#x3011;</p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116093832454.png" alt="image-20200116093832454" style="zoom:80%;"></p>
+<p>9&#x3001;&#x5B89;&#x88C5;&#x4E2D;&#xFF0C;&#x8BF7;&#x7A0D;&#x4F5C;&#x7B49;&#x5F85;&#xFF1A;</p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116093942673.png" alt="image-20200116093942673" style="zoom:80%;"></p>
+<p>10&#x3001;&#x70B9;&#x51FB;&#x3010;&#x8BB8;&#x53EF;&#x8BC1;&#x3011;</p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116094320163.png" alt="image-20200116094320163" style="zoom:80%;"></p>
+<p>11&#x3001;&#x6253;&#x5F00;<img src="0.1_Vmware&#x5B89;&#x88C5;.assets/image-20200116094532647.png" alt="image-20200116094532647">&#x7136;&#x540E;&#x968F;&#x4FBF;&#x590D;&#x5236;&#x4E00;&#x4E32;&#x79D8;&#x94A5;&#x8F93;&#x5165;&#x5230;&#x3010;&#x8BB8;&#x53EF;&#x8BC1;&#x79D8;&#x94A5;&#x683C;&#x5F0F;&#x3011;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x70B9;&#x51FB;&#x3010;&#x8F93;&#x5165;&#x3011;</p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116094650869.png" alt="image-20200116094650869"></p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116094825481.png" alt="image-20200116094825481" style="zoom:80%;"></p>
+<p>12&#x3001;&#x70B9;&#x51FB;&#x3010;&#x5B8C;&#x6210;&#x3011;</p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116094906707.png" alt="image-20200116094906707" style="zoom:80%;"></p>
+<p>13&#x3001;&#x5728;&#x684C;&#x9762;&#x627E;&#x5230;&#x3010;VMware Workstation Pro&#x3011;&#xFF0C;&#x53F3;&#x952E;&#x6253;&#x5F00;&#x5C5E;&#x6027;&#xFF1A;</p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116095109287.png" alt="image-20200116095109287"></p>
+<p>14&#x3001;&#x9009;&#x62E9;&#x517C;&#x5BB9;&#x6027;&#x4EE5;&#x3010;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x8FD0;&#x884C;&#x6B64;&#x7A0B;&#x5E8F;&#x3011;&#xFF0C;&#x70B9;&#x51FB;&#x3010;&#x786E;&#x5B9A;&#x3011;</p>
+<p><img src="../../C.assets/environment.assets/vmware&#x5B89;&#x88C5;&#x6559;&#x7A0B;/image-20200116095248993.png" alt="image-20200116095248993"></p>
+<p>&#x597D;&#x4E86;&#x3002;&#x6B64;&#x65F6;&#x865A;&#x62DF;&#x673A;VMware15&#x5DF2;&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x3002;&#x606D;&#x559C;&#x606D;&#x559C;~~~~</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: level 1 C及环境搭建">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="vmwre10打不开Ubuntu.html" class="navigation navigation-next " aria-label="Next page: vmware安装问题-vmware10打不开Ubuntu">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"vmware环境搭建","level":"1.2.1","depth":2,"next":{"title":"vmware安装问题-vmware10打不开Ubuntu","level":"1.2.2","depth":2,"path":"C/environment/vmwre10打不开Ubuntu.md","ref":"./C/environment/vmwre10打不开Ubuntu.md","articles":[]},"previous":{"title":"level 1 C及环境搭建","level":"1.2","depth":1,"path":"C/README.md","ref":"./C/README.md","articles":[{"title":"vmware环境搭建","level":"1.2.1","depth":2,"path":"C/environment/vmware安装教程.md","ref":"./C/environment/vmware安装教程.md","articles":[]},{"title":"vmware安装问题-vmware10打不开Ubuntu","level":"1.2.2","depth":2,"path":"C/environment/vmwre10打不开Ubuntu.md","ref":"./C/environment/vmwre10打不开Ubuntu.md","articles":[]},{"title":"vmware安装问题-不可恢复错误：(vcpu-0)","level":"1.2.3","depth":2,"path":"C/environment/CPU虚拟化问题.md","ref":"./C/environment/CPU虚拟化问题.md","articles":[]},{"title":"vmware安装问题-不可恢复错误：(svga)","level":"1.2.4","depth":2,"path":"C/environment/不可恢复错误svga.md","ref":"./C/environment/不可恢复错误svga.md","articles":[]},{"title":"vmware安装问题-安装hcmon driver失败","level":"1.2.5","depth":2,"path":"C/environment/安装hcmon driver失败.md","ref":"./C/environment/安装hcmon driver失败.md","articles":[]},{"title":"ubuntu懒汉版打开步骤-推荐","level":"1.2.6","depth":2,"path":"C/environment/Ubuntu懒汉版打开步骤.md","ref":"./C/environment/Ubuntu懒汉版打开步骤.md","articles":[]},{"title":"ubuntu折腾版iso安装步骤-不推荐","level":"1.2.7","depth":2,"path":"C/environment/Ubuntu折腾版iso安装步骤.md","ref":"./C/environment/Ubuntu折腾版iso安装步骤.md","articles":[]},{"title":"Ubuntu配置-vim配置","level":"1.2.8","depth":2,"path":"C/environment/vim配置.md","ref":"./C/environment/vim配置.md","articles":[]},{"title":"Ubuntu配置-vmtools配置","level":"1.2.9","depth":2,"path":"C/environment/vmtools配置.md","ref":"./C/environment/vmtools配置.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"C/environment/vmware安装教程.md","mtime":"2020-09-19T14:40:20.459Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-19T11:27:20.700Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
